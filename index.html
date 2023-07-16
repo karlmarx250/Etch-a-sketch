@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+      <div id='topContainer' class='topContainer'></div>
+      <div id='container1' class='containerOne'>
+          <div id='menuContainer' class='menuContainer'>
+              <h1 class='title'>ETCH-A-SKETCH</h1>
+              <button id='rainbow' class='rainbowButton'>RAINBOW</button>
+              <button id='eraser' class='eraserButton'>ERASER</button>
+              <button id='black' class='blackButton'>BLACK</button>
+              <input type='color' id='colorSelector' class='colorPicker' name=selector>
+              <label for='selector' class='colorPickerText'>SELECT COLOR:</label>
+              <div class='slider'>
+                  <input type='range' min='16' max='100' value='16' class='sliderStyle' id='sliderBar'>
+                  <p id='sliderText' class='sliderText'>
+                      <span id='sliderSize'>16</span>
+                      x
+                      <span id='sliderSize'>16</span>
+                  </p>    
+              </div>
+          </div>
+          <div id='gridContainer' class='gridContainer'>    
+              <div id='grid' class='grid'></div>
+          </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
